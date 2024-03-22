@@ -6,7 +6,7 @@ E741 is an implementation of a combined ERC20 and ERC721 token
 - Token IDs preserved on all transactions
 - 1.0 ERC20 transfer = 1 ERC721 transfer (ID chosen from a holdings list)
 - 1 ERC721 transfer = 1.0 ERC20 transfer
-- 
+
 # Contracts
 
 E741 contracts are found in src
