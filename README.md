@@ -22,8 +22,7 @@ src
 ├─ tokens
   ├─ E741V1Base - "Parent contract for token implementations"
   ├─ E741V1Token - "Basic E741 implementation"
-  ├─ E741V1Wrapped741 - "Wrapped E741 implementation"
-  └─ Emeralds - "The Emeralds contract"
+  └─ E741V1Wrapped741 - "Wrapped E741 implementation"
 └─ utils
   └─ BytecodeGenerator - "For deriving encoded bytes for contract initialization"
 
