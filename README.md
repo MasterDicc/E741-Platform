@@ -28,3 +28,11 @@ src
   └─ BytecodeGenerator - "For deriving encoded bytes for contract initialization"
 
 ```
+
+# Backwards Compatibility
+
+E741 is fully compatible with ERC20 and ERC721 standards.
+
+An E741 token is compatible with any contracts requiring ERC20 or ERC721 interactions. However, it is alaways best to test if you're unsure.
+
+The ERC-721 standard has the payable keyword on several functions that are non payable in ERC-20. In order to support both standards generally the payable keyword was removed from the incompatible functions.
