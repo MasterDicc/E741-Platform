@@ -39,6 +39,15 @@ Parent contract of all E741 token contracts
      1. Transfer IDs already owned by `from`
      2. "Make" tokens from the brokenIDsArray
      3. Mint new token IDs to `to`
+
+  `setSkipMintingGlobal(bool newSkipMintingGlobal) public onlyDev`
+
+  For the `dev` to enable or disable minting globally in order to reduce gas costs. Existing token IDs are still transferred
+
+  
+  `setSkipMinting(bool newSkipMinting) public`
+
+  For individual users to disable minting for transfers involving their address (as to or from)
   
 # `E741V1Token`
 Simple implementation of `E741V1Base`
