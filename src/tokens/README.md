@@ -24,7 +24,7 @@ Parent contract of all E741 token contracts
 
   `address public constant BROKEN_ADDRESS = address(0x5e7ec)`
   
-  This is the broken IDs address. When a user breaks an ID inside `_transfer741` it is teporarily stored at this address. Commonly used in `brokenIDsArray = ownedNfts[BROKEN_ADDRESS]`
+  This is the broken IDs address. When a user breaks an ID inside `_transfer741` it is temporarily stored at this address. Commonly used in `brokenIDsArray = ownedNfts[BROKEN_ADDRESS]`
   
   `_transfer741(address from, address to, uint amount) internal`
 
@@ -36,7 +36,7 @@ Parent contract of all E741 token contracts
      - When  the `to` user's s balance rolls over a multiple of `ONE` tokens, they "make" a token ID from either the brokenIDsArray or by minting
   3. Check if the user has disabled minting and, if so, adjust their ID transfer amount to only include their owned IDs
   4. Distribute token IDs from `from` to `to` according to the following order:
-     1. Transfer IDs alread owned by `from`
+     1. Transfer IDs already owned by `from`
      2. "Make" tokens from the brokenIDsArray
      3. Mint new token IDs to `to`
   
